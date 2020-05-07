@@ -40,7 +40,7 @@ const Box = (props) => {
             className="box" 
             style={{
                 color: props.colors[4][1],
-                background: `url('/images/digcolls/${boxProps.image}')`, 
+                background: `url(${require('../images/digcolls/' + boxProps.image)})`, 
                 border: `40px solid ${props.colors[3][1]}`,
                 ...boxCss,
             }}
